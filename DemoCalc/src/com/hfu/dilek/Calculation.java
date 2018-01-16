@@ -7,6 +7,17 @@ public class Calculation {
         System.out.println("Beginn with mathematics");
 
         additionStep();
+
+        multipStep();
+    }
+
+    private static void multipStep() {
+        for (int i = 0; i < 7; i++) {
+            int random = createRandom();
+            System.out.println("Counter i =  " + i + ", Random number " + random + ",  Multiply: " + (i + random));
+        }
+        System.out.println("");
+        System.out.println("End of Multiply");
     }
 
     private static void additionStep() {
